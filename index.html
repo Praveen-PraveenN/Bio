@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +17,14 @@
 
 
 <div class="container container1 " style="background-color: rgb(16,1,1);display: block;">
-     <div style="height: 10%;"> <img style="width: 120px;float: right;" src="https://images.pexels.com/photos/9806454/pexels-photo-9806454.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image">
-      <p class="name"> <strong style="font-size: 24px;font-family: cursive;">&nbsp;&nbsp; N.Praveen   </strong> </p>
+     <div style="height: 10%; transform: scale(1.3);"> <img style="width: 120px;float: right;margin-right: 10%;" src="https://images.pexels.com/photos/9806454/pexels-photo-9806454.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image" z-index=10>
+      <p class="name"> <strong style="font-size: 22px;font-family: cursive;"><br>&nbsp; N.Praveen   </strong> </p>
     </div>
 
 </div><br><br>
 <div class="container " >
  
-  <div class="card" style="float: left;margin-left: 4%;">
+  <div class="card" style="float: left;margin-left: 4%; ">
     <div class="card-body">
       <h5 class="card-title" style="font-size: 15px;text-decoration: underline;"> About</h5>
       <p class="card-text" style="font-size: 13px;">Gone through some bad phase of my life but later  with the grace of God  I am back to being Good Health.   </p>
@@ -42,8 +41,8 @@
 <div class="container" style="margin-left: 6% ;;">
   <div class="row" style="display:inline-flex;overflow: hidden;" >
     <div class="col-sm">
-      <div class="card " style="width: 18rem;">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/05/11/14/51/heart-762564__340.jpg" alt="Card image cap">
+      <div class="card " style="width: 18rem; ">
+        <img class="card-img-top"  src="https://cdn.pixabay.com/photo/2015/05/11/14/51/heart-762564__340.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title" style="text-decoration: underline;margin-left: 22px;">Likes</h5>
           <p class="card-text"style="font-size: 13px;"> 🏏 MSD  <br> 💤 Switzerland  <br> 🎵 Listening Songs </p>
@@ -103,13 +102,13 @@
              <div id="popBox" class="modal" style="display: none;scrollbar-color: dark;">
 
                <!-- Modal content -->
-                 <div class="modal-content">
-                  <button onClick="closeBox()" class="close">&times;</button>
+                 <div class="modal-content" style="border:5px white;">
+                  <button onClick="closeBox()" class="close" style="position: fixed;">&times;</button><br><br>
                   <img class="card-img-top images" src="https://64.media.tumblr.com/ad1bfc478f17562808bb31adb6258ccf/tumblr_otc544VHvw1uqtds1o1_1280.jpg" loading="lazy" alt="Image Not Available...."> <br><br>
                   <img class="card-img-top images" src="https://64.media.tumblr.com/e72d86f10e834e5dafcd0f81de7d5154/tumblr_p3nd2ylfgQ1uqtds1o1_1280.jpg" loading="lazy" alt="Image Not Available...."> <br><br>
                   <img class="card-img-top images" src="https://pbs.twimg.com/media/DtHERoDXgAA3Ax1.jpg" loading="lazy" alt="Image Not Available...."> <br><br>
                   <img class="card-img-top images" src="https://i.pinimg.com/736x/8d/af/bb/8dafbb0b8b7dd2e827c5a9d38f23e674.jpg" loading="lazy" alt="Image Not Available...."> <br><br>
-                  <p style="color: chartreuse;text-align: center;">  more on the way..................</p>
+                  <p style="color: black;text-align: center;">  more on the way..................</p>
                  </div>    
 
                   
@@ -152,13 +151,13 @@
 
 .container1{
     
-    height:100px;margin-top: 0px;width: 90%;
+    height:120px;margin-top: 0px;width: 90%;
     
     border: 2px solid ;
     border-radius: 8px;
     
 }
-.name{margin-top: 5%;margin-left: 2%;position: absolute;}
+.name{margin-left: 8%;position: absolute;}
 body{background-color: rgb(16,1,1);min-height: 100vh;}
 
 .button2{border:0px;margin-left: 10px;border-radius: 3px;color: black;background-color: #c2d6d8;}
@@ -183,7 +182,7 @@ body{background-color: rgb(16,1,1);min-height: 100vh;}
    background-size: 200% auto;
    color: white;            
    box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
+   border-radius: 4px;
    display: block;
  }
 
@@ -201,6 +200,7 @@ body{background-color: rgb(16,1,1);min-height: 100vh;}
    .card-img-top {
     width: 80%;
     height: 25vw;
+    border-radius: 8px;
     
 
 }
@@ -238,7 +238,7 @@ body{background-color: rgb(16,1,1);min-height: 100vh;}
 
   /* Modal Content/Box */
   .modal-content {
-    background-color: rgba(0,0,0,1);
+    background-color: linear-gradient(#2396bf, #0d5b77 40%, #004961 3%, #004961);
     
     margin: 45% auto; 
     padding: 15px;
@@ -254,11 +254,13 @@ body{background-color: rgb(16,1,1);min-height: 100vh;}
   
  /* The Close Button */
  .close {
-    color: rgb(14, 13, 13);
-    
+    color: black;
     margin-left: 0px;
     font-size: 38px;
     font-weight: bold;
+    background-color: white;
+    margin-left: 70%;
+   
   }
   
   
@@ -271,7 +273,6 @@ body{background-color: rgb(16,1,1);min-height: 100vh;}
 
 
 </style>
-
 
 
 
