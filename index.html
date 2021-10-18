@@ -83,7 +83,10 @@
         <div class="card-body">
           
          <button class="btn-grad" onClick="quotesBox()">My Fav Quotes</button>
-          <p class="card-text"> </p>
+          <div>
+          <div class="bubble x1"></div>
+          <a  href="https://wa.me/918686474478/?text=Hii Praveen" ><label for="chat" class="Message">&nbsp;&nbsp; <p style="margin-top: -8px;margin-left: 7px;">Click </p>  </label> </a>
+         </div>
         </div>
       </div>
       
@@ -148,6 +151,46 @@
 </html>
 
 <style>
+ 
+ .x1 {
+   
+
+	animation: animateBubble 4s linear infinite ;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 100px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes messageboxColor {
+  0%   {background-color: red; color: white;}
+  25%  {background-color: yellow;}
+  100% {background-color: green;}
+  50%  {background-color: blue;}
+}
+.Message{ color: black;border-radius: 80%;margin-left: 50%;width: 28%;height: 40px;
+  background-color: blue;
+  animation-name: messageboxColor;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  
+  box-shadow: 0 10px 20px -4px rgba(0,0,0,0.4), inset 0 -8px 30px 1px rgba(255,255,255,0.9), 0 -10px 15px -1px rgba(255,255,255,0.6), inset 0 8px 25px 0 rgba(0,0,0,0.4), inset 0 0 10px 1px rgba(255,255,255,0.6)
+  
+   
+}
 
 .container1{
     
